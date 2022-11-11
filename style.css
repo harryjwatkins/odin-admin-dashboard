@@ -107,7 +107,7 @@ p, h1, h2, h3, h4, h5 {
 
 #announcements {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
 }
 
@@ -120,4 +120,40 @@ p, h1, h2, h3, h4, h5 {
 #announcements div:nth-of-type(2) {
     border-bottom: 2px solid #ececec;
     margin-bottom: 15px;
+}
+
+#trending.box {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+}
+
+#trending div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+#trending div div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#trending div div h5 {
+    align-self: end;
+    font-size: 15px;
+}
+
+#trending div div p {
+    color: grey;
+}
+
+#trending img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    justify-self: right;
+    margin-right: 25px;
 }
